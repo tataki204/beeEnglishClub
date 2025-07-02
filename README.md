@@ -18,5 +18,4 @@ python3 -m venv env
 # Mac/Linux дээр орчинг идэвхжүүлэх
 source env/bin/activate
 
-# Windows дээр орчинг идэвхжүүлэх
-.\env\Scripts\activate
+

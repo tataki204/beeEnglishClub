@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import './css/main.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+// in an <h1> element. The component is exported as the default export of the module. 
+// The code assumes that the backend API is running on localhost:8000 and has an endpoint
+// at /api/hello/ that returns a JSON object with a "message" field.
 
 function App() {
   const [message, setMessage] = useState('');
@@ -12,7 +18,12 @@ function App() {
 
   return (
     <div>
-      <h1>{message}</h1>
+      <Header />
+      <main style={{ padding: '20px' }}>
+        <h1>Welcome to Bee English Club</h1>
+        <p>{message}</p>
+      </main>
+      <Footer />
     </div>
   );
 }
